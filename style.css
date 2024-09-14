@@ -1,0 +1,216 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS variable */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* logo and image style */
+/* #logo{
+    margin: -24px 2px;
+} */
+#logo img{
+    height: 64px;
+    margin: 3px 3px;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    /* height: 80px; */
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;   
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 315px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./fuddie.webp')no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height:400px;
+    width: 100%;
+    z-index: -1;
+    opacity: .86;  
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: .96rem;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    margin: -7px 4px 13px;;
+    padding: 0px;
+    border: 2px solid brown;
+    border-radius: 31px;
+    background-color:rgb(240, 239, 233);
+}
+
+
+#services .box img{
+    display: block;
+    height: 160px;
+    padding: 0px;
+    margin: auto;
+    border-radius: 0%;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.23rem;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: lightgreen;
+    color: black;
+    box-shadow: 5px 6px green;
+}
+.center{
+    text-align: center;
+}
+/* .services-container{
+    padding: 0px;
+    margin: 102px -12px;;
+} */
+#services .box p{
+    font-size: .98rem;
+    padding: 4%;
+    margin: -15px 44px;
+    text-align: center;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('./hehe.jpg')no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#client-section{
+    position: relative;
+    /* height: 344px; */
+}
+#clients img{
+    height: 60px;
+}
+.client-items{
+    padding: 15px 42px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('./contact.jpg')no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+#contact-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: "Nerko One", cursive;
+    width: 40%;
+    font-size: 1.3rem;
+}    
+html{
+    scroll-behavior: smooth;
+}
